@@ -6,7 +6,7 @@ var playerHealth = $('#playerHealth'),
     damage;
 
 
-
+//defines player properties
 // Player Constructor
 var Player = function (options) {
   var options = options || {};
@@ -18,7 +18,7 @@ var Player = function (options) {
   this.elem = options.elem;
 };
 
-
+//defines monster properties
 // Monster Constructor
 var Monster = function (options) {
   var options = options || {};
@@ -28,13 +28,13 @@ var Monster = function (options) {
 };
 
 
-// Player Instance
+// Player Instance - Crash is set to be our main character.
 var crash = new Player ({ 
   name: 'Crash',
   elem: $('.player')
 });
 
-// Monster Instances
+// Monster Instances - Started with a minion but boss is currently the only villain instance.
 var evilPiglet = new Monster ({
   name: 'Evil Piglet',
   elem: $('.monster')
@@ -43,7 +43,7 @@ var evilPiglet = new Monster ({
 
 
 
-// Player Attack Action
+// Player Attack Action=when we click the attack button, our player takes action
 attackBTN.on('click', function () {
   crash.attack(evilPiglet);
 });
