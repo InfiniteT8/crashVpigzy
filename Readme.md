@@ -1,3 +1,1 @@
-## Yo, I'm a Readme
-
-You should probably update me so people looking at your code have an idea what it is being used for :)
+An early build of my game -web application. Plan to add animations and physical attacks using multiple sprite characters.
